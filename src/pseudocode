@@ -1,0 +1,71 @@
+PSEUDOCODE BinarySearchTreeDemo
+
+displayMainMenu
+PROMPT FOR INPUT
+switch input
+    case 1:insert student
+        PROMPT for studentDetails
+        ADD studentDetails TO binarySearchTree
+    case 2:fetch student
+        PROMPT FOR studentID
+        IF binarySearchTree.fetch != null
+            displayStudentDetails
+        ELSE
+            DISPLAY "student not found"
+    case 3:encapsulation check
+        PROMPT for studentDetails
+        ADD studentDetails TO binarySearchTree AS inputStudent
+        studId = inputStudent.getId()
+        PROMPT FOR newLastName
+        inputStudent.setLastName(newLastName)
+        if inputStudent.getLastName == binarySearchTree.fetch(studId).getLastName
+            DISPLAY "Binary search tree not encapsulated"
+        else
+            DISPLAY "Binary search tree is encapsulated"
+    case 4:update
+        PROMPT for studentDetails
+        ADD studentDetails TO binarySearchTree AS inputStudent
+        PROMPT FOR newLastName
+        student.setLastName(newLastName)
+        studentID = student.getID()
+        if binarySearchTree.update(studentID,studentBhattarai)
+            DISPLAY "update success"
+        else
+            DISPLAY "Update not success"
+    case 5:delete
+        PROMPT FOR studentID
+        binarySearchTree.delete(studentID)
+    case 6:show all
+         binarySearchTree.showAll()
+    case 7 exit
+         perform exit
+END
+
+PSEUDOCODE AcessStaticMethodBhattarai
+
+displayMainMenu
+PROMPT FOR userOption
+CASE 1:
+    PROMPT FOR n
+    factorial(n)
+    DISPLAY factorial
+CASE 2:
+    PROMPT FOR a
+    PROMPT FOR n
+    power(a,n)
+    DISPLAY result
+CASE 3:
+    PROMPT FOR n
+    DISPLAY sum(n)
+CASE 4:
+    PROMPT FOR m
+    PROMPT FOR n
+    DISPLAY sumMN(m,n)
+CASE 5:
+    PROMPT FOR n
+    DISPLAY fibonacci(n)
+CASE 6
+    PROMPT FOR n
+    PROMPT FOR m
+    DISPLAY gcd(m,n)
+END
