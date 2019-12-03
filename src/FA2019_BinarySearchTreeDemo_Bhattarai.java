@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class FA2019_BinarySearchTreeDemo_Bhattarai {
 
+    private static BinarySearchTree_Bhattarai binarySearchTree_bhattarai = new BinarySearchTree_Bhattarai();
+
     public static void main(String[] args){
         displayMainMenu();
     }
@@ -19,7 +21,6 @@ public class FA2019_BinarySearchTreeDemo_Bhattarai {
         System.out.println(menu);
 
         Scanner menuScanner = new Scanner(System.in);
-        BinarySearchTree_Bhattarai binarySearchTree_bhattarai = new BinarySearchTree_Bhattarai();
 
         switch (menuScanner.nextInt()){
             case 1:
@@ -47,6 +48,7 @@ public class FA2019_BinarySearchTreeDemo_Bhattarai {
                 System.out.println("Invalid output");
                 break;
         }
+        displayMainMenu();
     }
 
     private static void exit() {

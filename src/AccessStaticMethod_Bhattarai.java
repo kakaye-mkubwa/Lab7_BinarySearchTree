@@ -2,11 +2,8 @@ import java.util.Scanner;
 
 public class AccessStaticMethod_Bhattarai {
 
-    private static int counter = 1;
     public static void main(String[] args){
-        if (counter > 0){
-            displayMainMenu();
-        }
+        displayMainMenu();
     }
 
     public static void displayMainMenu(){
@@ -42,14 +39,16 @@ public class AccessStaticMethod_Bhattarai {
                 break;
             case 0:
                 exit();
+            default:
+                System.out.println("Invalid Input");
         }
+        displayMainMenu();
     }
 
     /**
      * Perform exit call
      */
     private static void exit() {
-        counter = 0;
         System.exit(0);
     }
 
